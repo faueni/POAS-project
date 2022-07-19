@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { TextField } from '@mui/material';
 import Checkbox from './components/checkbox'
+import { TextField, Button } from '@mui/material';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,11 +12,11 @@ function App() {
 
 
     <div className="App">
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-
+      <TextField id="outlined-basic" label="Adicionar Tarefa" variant="outlined" /><br/>
+      <Button variant="contained">Adicionar</Button>
+      <hr/>
       <Checkbox />
 
-      
     </div>
   )
 }
